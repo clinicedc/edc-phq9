@@ -1,2 +1,2 @@
-# edc-pqh9
-PQH9
+# edc-phq9
+PHQ9
