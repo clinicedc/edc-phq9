@@ -3,7 +3,7 @@
 edc PHQ9
 --------
 
-Classes for PHQ9 questionnaire
+Classes for PHQ9 (Patient Health Questionnaire)
 
 
 .. |pypi| image:: https://img.shields.io/pypi/v/edc-phq9.svg
