@@ -16,8 +16,8 @@ def get_fieldsets() -> tuple:
             "fields": (
                 "subject_identifier",
                 "report_datetime",
-                "phq9_performed",
-                "phq9_not_performed_reason",
+                "ph9_performed",
+                "ph9_not_performed_reason",
             )
         },
     )
