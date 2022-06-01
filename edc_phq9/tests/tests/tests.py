@@ -1,5 +1,3 @@
-from pprint import pprint
-
 from django.test import TestCase
 from edc_constants.constants import NO, YES
 from edc_utils import get_utcnow
