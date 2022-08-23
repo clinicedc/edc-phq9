@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django_audit_fields import audit_fieldset_tuple
-from edc_model_admin import SimpleHistoryAdmin
+from edc_model_admin.history import SimpleHistoryAdmin
 
 from .admin_site import edc_phq9_admin
 from .fieldsets import get_phq9_fieldsets
