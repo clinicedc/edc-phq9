@@ -32,7 +32,6 @@ class Phq9Admin(
     Phq9ModelAdminMixin,
     SimpleHistoryAdmin,
 ):
-
     form = Phq9Form
 
     fieldsets = get_fieldsets()
