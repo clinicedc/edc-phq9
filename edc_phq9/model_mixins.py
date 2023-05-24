@@ -6,7 +6,6 @@ from .choices import PHQ_CHOICES
 
 
 class Phq9ModelMixin(models.Model):
-
     ph9_performed = models.CharField(
         verbose_name="Is the PH9 assessment being performed?",
         max_length=15,

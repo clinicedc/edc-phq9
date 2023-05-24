@@ -13,7 +13,6 @@ class Phq9(
     SiteModelMixin,
     BaseUuidModel,
 ):
-
     report_datetime = models.DateTimeField(default=get_utcnow)
 
     on_site = CurrentSiteManager()
