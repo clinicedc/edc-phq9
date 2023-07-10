@@ -1,7 +1,7 @@
 from django import forms
 from django.conf import settings
 from edc_constants.constants import NO, YES
-from edc_crf.form_validator_mixins import CrfFormValidatorMixin
+from edc_crf.crf_form_validator_mixins import CrfFormValidatorMixin
 from edc_form_validators import FormValidatorMixin
 from edc_form_validators.form_validator import FormValidator
 from edc_visit_schedule.utils import raise_if_not_baseline
