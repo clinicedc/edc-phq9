@@ -1,3 +1,5 @@
+from django.conf import settings
+from django.contrib.sites.models import Site
 from django.test import TestCase
 from edc_constants.constants import NO, YES
 from edc_utils import get_utcnow
@@ -20,7 +22,10 @@ class Phq9Tests(TestCase):
     def test_form_performed(self):
         data = {fld: NEARLY_EVERYDAY for fld in get_phq9_fields()}
         data.update(
-            subject_identifier="12345", report_datetime=get_utcnow(), ph9_performed=YES
+            subject_identifier="12345",
+            report_datetime=get_utcnow(),
+            ph9_performed=YES,
+            site=Site.objects.get(id=settings.SITE_ID),
         )
         form = Phq9Form(data=data)
         form.is_valid()
