@@ -22,7 +22,7 @@ def get_fieldsets() -> tuple:
         },
     )
 
-    fieldsets = (fieldset,) + (get_phq9_fieldsets(),)
+    fieldsets = (fieldset, *get_phq9_fieldsets())
     fieldsets += (audit_fieldset_tuple,)
     return fieldsets
 

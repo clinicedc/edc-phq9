@@ -8,6 +8,6 @@ phq9_codenames = []
 
 app_name, model_name = get_phq9_model_name().split(".")
 for prefix in ["add", "change", "view", "delete"]:
-    phq9_codenames.append(f"{app_name}.{prefix}_{model_name}")
+    phq9_codenames.append(f"{app_name}.{prefix}_{model_name}")  # noqa: PERF401
 phq9_codenames.append(f"{app_name}.view_historical{model_name}")
 phq9_codenames.sort()
