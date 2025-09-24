@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.contrib.sites.models import Site
-from django.test import TestCase
+from django.test import TestCase, override_settings
 from edc_constants.constants import NO, YES
 from edc_utils import get_utcnow
 
@@ -10,6 +10,7 @@ from edc_phq9.forms import Phq9Form
 from edc_phq9.utils import get_phq9_model_cls
 
 
+@override_settings(SITE_ID=10)
 class Phq9Tests(TestCase):
     def test_model(self):
         get_phq9_model_cls()

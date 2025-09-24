@@ -1,6 +1,6 @@
 from django.db import models
 from edc_constants.choices import YES_NO
-from edc_constants.constants import NOT_APPLICABLE, YES
+from edc_constants.constants import NOT_APPLICABLE, NULL_STRING, YES
 
 from .choices import PHQ_CHOICES
 
@@ -16,7 +16,7 @@ class Phq9ModelMixin(models.Model):
     ph9_not_performed_reason = models.TextField(
         verbose_name="If NO, please provide a reason",
         max_length=200,
-        null=True,
+        default=NULL_STRING,
         blank=True,
     )
 
