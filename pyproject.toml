@@ -39,7 +39,7 @@ classifiers = [
 ]
 
 dependencies = [
-    "clinicedc>=2.0.3",
+    "clinicedc>=2.0.26",
 ]
 
 [project.urls]
