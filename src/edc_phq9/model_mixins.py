@@ -1,6 +1,6 @@
+from clinicedc_constants import NOT_APPLICABLE, NULL_STRING, YES
 from django.db import models
 from edc_constants.choices import YES_NO
-from edc_constants.constants import NOT_APPLICABLE, NULL_STRING, YES
 
 from .choices import PHQ_CHOICES
 

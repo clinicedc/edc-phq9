@@ -1,4 +1,4 @@
-from django.utils.html import format_html
+from django.utils.safestring import mark_safe
 
 
 def get_phq9_fields() -> tuple:
@@ -20,7 +20,7 @@ def get_phq9_fieldsets() -> tuple:
     return (
         "PHQ-9",
         {
-            "description": format_html(
+            "description": mark_safe(
                 "<h3>Over the last 2 weeks, how often have you been bothered "
                 "by any of the following?</h3>"
             ),

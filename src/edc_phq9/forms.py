@@ -1,6 +1,6 @@
+from clinicedc_constants import NO, YES
 from django import forms
 from django.conf import settings
-from edc_constants.constants import NO, YES
 from edc_crf.crf_form_validator_mixins import CrfFormValidatorMixin
 from edc_form_validators import FormValidatorMixin
 from edc_form_validators.form_validator import FormValidator

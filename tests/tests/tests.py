@@ -1,7 +1,7 @@
+from clinicedc_constants import NO, YES
 from django.conf import settings
 from django.contrib.sites.models import Site
 from django.test import TestCase, override_settings
-from edc_constants.constants import NO, YES
 from edc_utils import get_utcnow
 
 from edc_phq9.constants import NEARLY_EVERYDAY

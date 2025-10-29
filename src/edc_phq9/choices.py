@@ -1,4 +1,4 @@
-from edc_constants.constants import NOT_APPLICABLE
+from clinicedc_constants import NOT_APPLICABLE
 
 from .constants import MORE_THAN_HALF, NEARLY_EVERYDAY, NOT_AT_ALL, SEVERAL_DAYS
 
