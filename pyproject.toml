@@ -9,7 +9,7 @@ namespace = false
 
 [project]
 name = "edc-phq9"
-version = "1.1.0"
+version = "1.2.0"
 description = "Classes for PHQ9 in clinicedc/edc projects"
 readme = {file = "README.rst", content-type = "text/x-rst"}
 license = "GPL-3.0-or-later"
@@ -40,6 +40,7 @@ classifiers = [
 
 dependencies = [
     "clinicedc>=2.0.26",
+    "clinicedc-constants>=1.1.0",
 ]
 
 [project.urls]

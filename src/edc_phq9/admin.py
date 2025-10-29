@@ -22,9 +22,7 @@ def get_fieldsets() -> tuple:
         },
     )
 
-    fieldsets = (fieldset, *get_phq9_fieldsets())
-    fieldsets += (audit_fieldset_tuple,)
-    return fieldsets
+    return fieldset, get_phq9_fieldsets(), audit_fieldset_tuple
 
 
 @admin.register(Phq9, site=edc_phq9_admin)
