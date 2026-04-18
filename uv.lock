@@ -1035,7 +1035,7 @@ wheels = [
 
 [[package]]
 name = "edc-phq9"
-version = "1.4.0"
+version = "1.4.1"
 source = { editable = "." }
 dependencies = [
     { name = "clinicedc" },
@@ -1043,7 +1043,6 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
-    { name = "clinicedc" },
     { name = "clinicedc-tests" },
 ]
 docs = [
@@ -1060,10 +1059,7 @@ lint = [
 requires-dist = [{ name = "clinicedc", editable = "../clinicedc" }]
 
 [package.metadata.requires-dev]
-dev = [
-    { name = "clinicedc", editable = "../clinicedc" },
-    { name = "clinicedc-tests", editable = "../clinicedc-tests" },
-]
+dev = [{ name = "clinicedc-tests", editable = "../clinicedc-tests" }]
 docs = [
     { name = "furo", specifier = ">=2025.7.19" },
     { name = "sphinx", specifier = ">=8.2.3" },
