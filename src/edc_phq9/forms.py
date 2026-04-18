@@ -6,8 +6,7 @@ from edc_form_validators import FormValidatorMixin
 from edc_form_validators.form_validator import FormValidator
 from edc_visit_schedule.utils import raise_if_not_baseline
 
-from edc_phq9.fieldsets import get_phq9_fields
-
+from .fieldsets import get_phq9_fields
 from .utils import get_phq9_model_cls
 
 
