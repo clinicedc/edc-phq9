@@ -42,7 +42,7 @@ classifiers = [
 ]
 
 dependencies = [
-    "clinicedc>=2.9.4",
+    "clinicedc>=3.0.0",
 ]
 
 [project.urls]
@@ -127,7 +127,7 @@ docs = [
     "sphinx-inline-tabs>=2023.4.21",
 ]
 dev = [
-    "clinicedc-tests>=1.0.0",
+    "clinicedc-tests>=1.2.2",
 ]
 
 [tool.uv.sources]
